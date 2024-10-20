@@ -55,7 +55,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ onSubmit, taskToEdit }) => {
         <option value="medium">Medium</option>
         <option value="low">Low</option>
       </select>
-      <button type="submit">{taskToEdit ? "Update Task" : "Add Task"}</button>
+      <button className="greenbutton" type="submit">{taskToEdit ? "Update Task" : "Add"}</button>
     </form>
   );
 };

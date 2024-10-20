@@ -1,31 +1,32 @@
-// page.tsx
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TaskForm from "@/components/TaskForm";
 import TaskList from "@/components/TaskList";
-import Modal from "@/components/Modal"; // Import the Modal component
+import Modal from "@/components/Modal"; 
 import { Task } from "../types/task";
 import "./globals.css";
 import { IoMdAddCircleOutline } from "react-icons/io";
 
-const loadTasksFromLocalStorage = (): Task[] => {
-  const tasks: Task[] = [];
-  if (typeof window !== "undefined") {
-    Object.keys(localStorage).forEach((key) => {
-      if (key.startsWith("task_")) {
-        const task = localStorage.getItem(key);
-        if (task) tasks.push(JSON.parse(task));
-      }
-    });
-  }
-  return tasks;
-};
-
 export default function Home() {
-  const [tasks, setTasks] = useState<Task[]>(loadTasksFromLocalStorage);
+  const [tasks, setTasks] = useState<Task[]>([]);
   const [taskToEdit, setTaskToEdit] = useState<Task | undefined>(undefined);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
+
+  useEffect(() => {
+    const loadTasksFromLocalStorage = (): Task[] => {
+      const tasks: Task[] = [];
+      Object.keys(localStorage).forEach((key) => {
+        if (key.startsWith("task_")) {
+          const task = localStorage.getItem(key);
+          if (task) tasks.push(JSON.parse(task));
+        }
+      });
+      return tasks;
+    };
+
+    setTasks(loadTasksFromLocalStorage());
+  }, []);
 
   const saveTaskToLocalStorage = (task: Task) => {
     if (typeof window !== "undefined") {
@@ -89,7 +90,8 @@ export default function Home() {
             setTaskToEdit(undefined);
           }}
         >
-          <IoMdAddCircleOutline /> Add Task
+          <IoMdAddCircleOutline />
+          <span className="add-task-text"> Add Task</span>
         </button>
       </div>
       <input
