@@ -1,18 +1,20 @@
 # Task Management App
 This is a Task Management App built with Next.js for managing tasks effectively. The application allows users to add, edit, delete, and mark tasks as completed while providing a responsive design.
 
-Table of Contents
+# Table of Contents
 Getting Started
 Features
 User Interface
 Technologies Used
+Live Demo
 Learn More
 Deploy on Vercel
 License
-Getting Started
+
+# Getting Started
 To get started, clone the repository and install the dependencies. Then, run the development server:
 
-bash
+# bash
 Copy code
 git clone <repository-url>
 cd <project-directory>
@@ -41,7 +43,7 @@ Search Functionality: Filter tasks by title or description.
 
 Local Storage: Tasks persist between page reloads using local storage.
 
-User Interface
+# User Interface
 The application features a clean and responsive UI using basic HTML and CSS. Tasks are color-coded based on priority:
 
 High Priority: Red
@@ -49,22 +51,24 @@ Medium Priority: Yellow
 Low Priority: Green
 Completed tasks are shown at the bottom of the list to enhance visibility.
 
-Technologies Used
+# Technologies Used
 React: For building the user interface.
 Next.js: For server-side rendering and optimized performance.
 TypeScript: For type safety and improved developer experience.
 CSS: For styling the application.
-Learn More
-To learn more about Next.js and its features, explore the following resources:
+Live Demo
+You can view the live version of the app at: Task Management App Demo
 
+# Learn More
+To learn more about Next.js and its features, explore the following resources:
 Next.js Documentation - Comprehensive guide on Next.js features and API.
 Learn Next.js - An interactive tutorial for learning Next.js.
 You can also check out the Next.js GitHub repository for additional insights and community contributions.
 
-Deploy on Vercel
+# Deploy on Vercel
 For easy deployment, use the Vercel Platform created by the developers of Next.js.
 
 Refer to the Next.js deployment documentation for detailed instructions.
 
-License
+# License
 This project is licensed under the MIT License. Feel free to use and modify it according to your needs.
