@@ -14,17 +14,26 @@ License
 # Getting Started
 To get started, clone the repository and install the dependencies. Then, run the development server:
 
-# bash
+bash
 Copy code
 git clone <repository-url>
-cd <project-directory>
+cd <repository-directory>
 npm install
 npm run dev
-# or
+or
+
+bash
+Copy code
 yarn dev
-# or
+or
+
+bash
+Copy code
 pnpm dev
-# or
+or
+
+bash
+Copy code
 bun dev
 Open http://localhost:3000 in your browser to view the application.
 
@@ -43,7 +52,7 @@ Search Functionality: Filter tasks by title or description.
 
 Local Storage: Tasks persist between page reloads using local storage.
 
-# User Interface
+User Interface
 The application features a clean and responsive UI using basic HTML and CSS. Tasks are color-coded based on priority:
 
 High Priority: Red
@@ -56,19 +65,19 @@ React: For building the user interface.
 Next.js: For server-side rendering and optimized performance.
 TypeScript: For type safety and improved developer experience.
 CSS: For styling the application.
-Live Demo
-You can view the live version of the app at: Task Management App Demo
+
+# Live Demo
+You can view the live version of the app at: [Task Management App Demo](https://task-manager-nu-pink.vercel.app/)
 
 # Learn More
 To learn more about Next.js and its features, explore the following resources:
+
 Next.js Documentation - Comprehensive guide on Next.js features and API.
 Learn Next.js - An interactive tutorial for learning Next.js.
-You can also check out the Next.js GitHub repository for additional insights and community contributions.
-
-# Deploy on Vercel
-For easy deployment, use the Vercel Platform created by the developers of Next.js.
-
-Refer to the Next.js deployment documentation for detailed instructions.
+Check out the Next.js GitHub repository for additional insights and community contributions.
+Deploy on Vercel
+For easy deployment, use the Vercel Platform created by the developers of Next.js. Refer to the Next.js deployment documentation for detailed instructions.
 
 # License
 This project is licensed under the MIT License. Feel free to use and modify it according to your needs.
+
