@@ -28,12 +28,19 @@ Open http://localhost:3000 in your browser to view the application.
 
 # Features
 Add a Task: Create tasks with a title, description, and priority (high, medium, low).
+
 Edit a Task: Modify existing tasks to update details.
+
 Delete a Task: Remove tasks from the list easily.
+
 Mark as Completed: Toggle the completion status of tasks.
+
 Dynamic Sorting: Sort tasks by priority with high priority tasks displayed at the top.
+
 Search Functionality: Filter tasks by title or description.
+
 Local Storage: Tasks persist between page reloads using local storage.
+
 User Interface
 The application features a clean and responsive UI using basic HTML and CSS. Tasks are color-coded based on priority:
 
